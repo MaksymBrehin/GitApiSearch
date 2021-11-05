@@ -1,0 +1,11 @@
+<div class="main">
+  <center>
+    <h1 class="github">GitHub</h1>
+    <%= form_with(url: git_path, method: "get", local: true) do %>
+      <%= text_field_tag(:query) %>
+      <%= submit_tag("Search",class: "btn btn-primary") %>
+    <% end %>
+    <div class="name"><h3> <%= @name_of_git %>  </h3></div>
+  </center>
+  <div class="repos"> <%= raw(@repos.join("<br />")) %></div>
+</div>
