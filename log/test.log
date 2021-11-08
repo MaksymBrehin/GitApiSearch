@@ -1,0 +1,72 @@
+  [1m[35m (165.9ms)[0m  [1m[35mDROP DATABASE IF EXISTS "myapp_test"[0m
+  [1m[35m (387.5ms)[0m  [1m[35mCREATE DATABASE "myapp_test" ENCODING = 'unicode'[0m
+  [1m[35mSQL (2.4ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (26.6ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (5.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (0)[0m
+  [1m[35m (5.7ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (3.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (2.1ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "test"], ["created_at", "2021-11-08 06:12:14.766128"], ["updated_at", "2021-11-08 06:12:14.766128"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.8ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.5ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "schema_sha1"], ["value", "c9ad1dbaa05acea2eb44861d1fdc691e622f5dd5"], ["created_at", "2021-11-08 06:12:14.776753"], ["updated_at", "2021-11-08 06:12:14.776753"]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (2.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+Started GET "/git" for 127.0.0.1 at 2021-11-08 08:12:20 +0200
+Processing by GitController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering git/index.html.erb within layouts/application
+  Rendered git/index.html.erb within layouts/application (Duration: 4.1ms | Allocations: 636)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/maksymbrehin/github/testing/public/packs-test
+[Webpacker] Hash: 136125f11e5621d168a5
+Version: webpack 4.46.0
+Time: 3076ms
+Built at: 08.11.2021 08:12:28
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-6a3d7ee8842fc9a8a864.js    125 KiB  application  [emitted] [immutable]  application
+js/application-6a3d7ee8842fc9a8a864.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  384 bytes               [emitted]              
+Entrypoint application = js/application-6a3d7ee8842fc9a8a864.js js/application-6a3d7ee8842fc9a8a864.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+  Rendered layout layouts/application.html.erb (Duration: 6999.6ms | Allocations: 11886)
+Completed 200 OK in 8166ms (Views: 7007.4ms | ActiveRecord: 0.0ms | Allocations: 16742)
+Started GET "/assets/application-67adf36138d5ad20c710443de46feea7e293e0fba237b8feff4654fe3abaee67.css" for 127.0.0.1 at 2021-11-08 08:12:28 +0200
+Started GET "/git?query=dhh&commit=Search" for 127.0.0.1 at 2021-11-08 08:12:29 +0200
+Processing by GitController#index as HTML
+  Parameters: {"query"=>"dhh", "commit"=>"Search"}
+  Rendering layout layouts/application.html.erb
+  Rendering git/index.html.erb within layouts/application
+  Rendered git/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 116)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.9ms | Allocations: 1886)
+Completed 200 OK in 505ms (Views: 9.1ms | ActiveRecord: 0.0ms | Allocations: 4931)
+  [1m[36mTRANSACTION (22.9ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+Started GET "/git" for 127.0.0.1 at 2021-11-08 08:12:30 +0200
+Processing by GitController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering git/index.html.erb within layouts/application
+  Rendered git/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 114)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.5ms | Allocations: 1886)
+Completed 200 OK in 227ms (Views: 8.3ms | ActiveRecord: 0.0ms | Allocations: 4004)
+Started GET "/git?query=biubiubu&commit=Search" for 127.0.0.1 at 2021-11-08 08:12:30 +0200
+Processing by GitController#index as HTML
+  Parameters: {"query"=>"biubiubu", "commit"=>"Search"}
+  Rendering layout layouts/application.html.erb
+  Rendering git/index.html.erb within layouts/application
+  Rendered git/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 114)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.4ms | Allocations: 1884)
+Completed 200 OK in 441ms (Views: 8.5ms | ActiveRecord: 0.0ms | Allocations: 4002)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m

@@ -336,3 +336,69 @@ Processing by GitController#index as HTML
 Completed 200 OK in 440ms (Views: 27.4ms | Allocations: 6637)
 
 
+Started GET "/git?query=dhh&commit=Search" for ::1 at 2021-11-05 14:20:46 +0200
+Processing by GitController#index as HTML
+  Parameters: {"query"=>"dhh", "commit"=>"Search"}
+  Rendering layout layouts/application.html.erb
+  Rendering git/index.html.erb within layouts/application
+  Rendered git/index.html.erb within layouts/application (Duration: 2.8ms | Allocations: 149)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 31.7ms | Allocations: 4128)
+Completed 200 OK in 619ms (Views: 35.9ms | Allocations: 7328)
+
+
+Started GET "/git?query=MaksymBrehin&commit=Search" for ::1 at 2021-11-05 15:31:43 +0200
+Processing by GitController#index as HTML
+  Parameters: {"query"=>"MaksymBrehin", "commit"=>"Search"}
+  Rendering layout layouts/application.html.erb
+  Rendering git/index.html.erb within layouts/application
+  Rendered git/index.html.erb within layouts/application (Duration: 5.1ms | Allocations: 148)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 51.1ms | Allocations: 4107)
+Completed 200 OK in 818ms (Views: 54.8ms | Allocations: 8725)
+
+
+Started GET "/git?query=&commit=Search" for ::1 at 2021-11-05 15:32:25 +0200
+Processing by GitController#index as HTML
+  Parameters: {"query"=>"", "commit"=>"Search"}
+  Rendering layout layouts/application.html.erb
+  Rendering git/index.html.erb within layouts/application
+  Rendered git/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 147)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 23.2ms | Allocations: 4103)
+Completed 200 OK in 442ms (Views: 25.5ms | Allocations: 6322)
+
+
+Started GET "/git?query=dhh&commit=Search" for ::1 at 2021-11-05 15:44:29 +0200
+Processing by GitController#index as HTML
+  Parameters: {"query"=>"dhh", "commit"=>"Search"}
+  Rendering layout layouts/application.html.erb
+  Rendering git/index.html.erb within layouts/application
+  Rendered git/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 149)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 45.3ms | Allocations: 4128)
+Completed 200 OK in 779ms (Views: 136.2ms | Allocations: 7279)
+
+
+Started GET "/git?query=dhh&commit=Search" for ::1 at 2021-11-05 15:44:30 +0200
+Processing by GitController#index as HTML
+  Parameters: {"query"=>"dhh", "commit"=>"Search"}
+  Rendering layout layouts/application.html.erb
+  Rendering git/index.html.erb within layouts/application
+  Rendered git/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 149)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 16.5ms | Allocations: 4128)
+Started GET "/git?query=dhh&commit=Search" for ::1 at 2021-11-05 15:45:22 +0200
+Completed 200 OK in 52185ms (Views: 51823.0ms | Allocations: 11237)
+
+
+Processing by GitController#index as HTML
+  Parameters: {"query"=>"dhh", "commit"=>"Search"}
+  Rendering layout layouts/application.html.erb
+  Rendering git/index.html.erb within layouts/application
+  Rendered git/index.html.erb within layouts/application (Duration: 2.8ms | Allocations: 149)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 65.8ms | Allocations: 4106)
+Completed 200 OK in 734ms (Views: 68.1ms | Allocations: 7739)
+
+
